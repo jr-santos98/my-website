@@ -130,7 +130,7 @@ enableEmoji = true
           # URL of avatar shown in home page
           avatarURL = "/img/avatar.jpg"
           # title shown in home page (HTML format is supported)
-          title = ""
+          title = "Junior Santos"
           # subtitle shown in home page
           subtitle = "'A ciência é o que nós compreendemos suficientemente bem para explicar a um computador. A arte é tudo mais.' - Donald Knuth"
           # whether to use typeit animation for subtitle
@@ -330,7 +330,7 @@ enableEmoji = true
           # URL of avatar shown in home page
           avatarURL = "/img/avatar.jpg"
           # title shown in home page (HTML format is supported)
-          title = ""
+          title = "Junior Santos"
           # subtitle shown in home page
           subtitle = "'Science is what we understand well enough to explain to a computer. Art is everything else we do.' - Donald Knuth"
           # whether to use typeit animation for subtitle
