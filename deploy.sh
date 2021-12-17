@@ -3,15 +3,14 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+# Add chances for /Public
+hugo -D
+
 # Go To Public folder
 cd public
 
-# Set CNAME
-#echo "arthurdouillard.com" > CNAME
-
 # Add changes to git.
 git add .
-
 
 # Commit changes.
 msg="rebuilding site `date`"
@@ -28,4 +27,4 @@ cd ..
 
 git add public/
 git commit -m "Update public submodule."
-git push origin master
+git push
