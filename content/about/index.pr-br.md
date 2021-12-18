@@ -7,6 +7,9 @@ lightgallery: true
 
 math:
   enable: true
+
+comment:
+  enable: false
 ---
 
 Sou estudante de graduação em Ciência da Computação na UNICAMP, entusista

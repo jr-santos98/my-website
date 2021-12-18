@@ -7,6 +7,9 @@ lightgallery: true
 
 math:
   enable: true
+
+comment:
+  enable: false
 ---
 
 I’m an undergrad student in Computer Science at UNICAMP that loves GNU/Linux and programming.
