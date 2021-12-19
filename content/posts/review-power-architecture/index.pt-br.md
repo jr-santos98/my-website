@@ -1,39 +1,35 @@
 ---
-weight: 1
 title: "IBM Power Systems - Power8, Power9 and Power10"
 date: 2021-03-05
-lastmod: 2021-03-05
 draft: false
 author: "Junior Santos"
-authorLink: "https://jr-santos98.github.io/"
+authorLink: "https://jr-santos98.github.io/about/"
 description: "Uma revisão sobre IBM Power Systems."
-resources:
-- name: "featured-image"
-  src: "featured-image.png"
 
 tags: ["Power Systems", "Power8", "Power9", "Power10"]
 categories: ["Power Systems"]
-
-lightgallery: true
 ---
 
 Este post faz uma revisão sobre os processadores que compoêm o IBM Power Systems.
 
 <!--more-->
 
+<img src="featured-image.png" alt="drawing" width="800"/>
+
 # Instrodução
 
-Em uma comparação entre IBM Power e x86, pode-se afirmar que a melhor opções entre eles, dependerá do seu uso.
+Em uma comparação entre os processadores da IBM (arquitetura Power) e os da Intel/AMD (arquitetura x86),
+pode-se afirmar que a melhor opções entre eles, dependerá do seu uso.
 Os chips x86 são voltados para o uso geral, apresentam boa escabilidade e alto performace em quase todos os usos.
 Por outro lado, os chips Power são focados para uso de alto desempenho e alta-performace para servidores.
 Tem suporte para atender demandas emengentes, têm virtualização de forma nativa,
 com diversos recursos em hardware focados em virtualização, sendo a melhor escolha possível para esse tipo de trabalho.
 
-Além disso, a IBM Power é focado para o ramo de negócios, possuindo planos de suporte para as diferentes atividades de negócios.
+Além disso, a arquitetura Power é focado para o ramo de negócios, possuindo planos de suporte para as diferentes atividades de negócios.
 Tendo foco principal em soluções de virtualização, para atender demandas massivas de trabalho.
 Ademais, os chips possuem recursos para dividir trabalhos ou reunir recursos, fazendo vários servidores se comportarem como um.
 
-Dessa forma, IBM Power torna-se uma peça fundamental para o plano de negócios de qualquer empresa ligada a tecnologia ou que precise de uma grande escalabilidade de recursos para atender a uma demanda massiva de trabalho.
+Dessa forma, a IBM torna-se uma peça fundamental para o plano de negócios de qualquer empresa ligada a tecnologia ou que precise de uma grande escalabilidade de recursos para atender a uma demanda massiva de trabalho.
 Assim como principalmente para a área de computação em nuvem.
 
 ## POWER8
@@ -79,7 +75,7 @@ Todas essas melhorias foram realizadas com a perspectica de criar um processador
 
 ## POWER10
 
-Power10 foi lançado pela IBM em 2020. O chip foi aprimorado para ter maior velocidade de processamento e maior capacidade para cálculos intensivos.
+Power10 foi anunciado pela IBM em 2020, com lançamento em 2021. O chip foi aprimorado para ter maior velocidade de processamento e maior capacidade para cálculos intensivos.
 A quantidade de núcleos podem variar de 15 á 30, com um clock que vária de 4,5 GHz á 4 GHz.
 Power10 possui 32 KB para instruções + 32 KB para dados no cache L1, 2 MB tipo SRAM no cache L2, 128 MB do tipo eDRAM no cache L3.
 
@@ -104,4 +100,4 @@ Com todos os recursos das versões anteriores otimizados, com a adição de recu
 tornam esse processador o mais poderoso que a IBM já criou.
 Perfeito para trabalhos de análise de dados, computação em nuvem, programação de alto desempenho e entre outros trabalhos que necessitam de máquinas atualizas e poderosas.
 
-> O OpenPower Lab não conta com servidores Power10 dentro de seu acervo.
+> O [OpenPower Lab](https://openpower.ic.unicamp.br/) não conta com servidores Power10 dentro de seu acervo.
