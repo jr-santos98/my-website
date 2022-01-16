@@ -12,6 +12,8 @@ comment:
   enable: false
 ---
 
+# <i class='fas fa-terminal'></i> Olá! Sejam bem-vindos...
+
 Sou estudante de graduação em Ciência da Computação na UNICAMP, entusista
 na comunidade GNU/Linux e amo programação.
 
