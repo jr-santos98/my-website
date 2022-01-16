@@ -1,6 +1,6 @@
 ---
 title: "IBM Power Systems - Power8, Power9 and Power10"
-date: 2021-03-05
+date: 2021-12-18
 draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/en/about/"

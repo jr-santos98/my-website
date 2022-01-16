@@ -1,6 +1,6 @@
 ---
 title: Hello Minikube for ppc64le
-date: 2020-11-11
+date: 2021-12-15
 draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/en/about/"
