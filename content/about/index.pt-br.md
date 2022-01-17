@@ -24,8 +24,12 @@ Também trabalhei com o OpenStack, configurando e instalando um serviço de nuve
 
 ## Habilidades
 
-- <img src="images\openstack-logo.png" width="16"></img> OpenStack
-- **Programação:** C, Python
+- <img src="images\openstack-logo.png" width="16"></img> OpenStack;
+- <img src="images\jenkins-logo.png" width="16"></img> CI/CD;
+- <img src="images\opnfv-logo.png" width="16"></img> OPNFV;
+- **Programação:** Python, C, C++, JavaScript, Shell Script, java;
+- **Web Backend:** Servidores Linux, Configuração de rede, Apache, Hugo, Django;
+- **Web Front:** HTML e CSS básico.
 
 ## Hobbies e Interesses
 
@@ -35,7 +39,7 @@ Também trabalhei com o OpenStack, configurando e instalando um serviço de nuve
 - No tempo livre amo <i class="fas fa-book"></i>  ler, <i class="fas fa-music"></i> ouvir música,
 <i class="fas fa-gamepad"></i> jogar...
 - Sigo alguns mangás como: Jujutsu Kaisen, Noragami, Seraph of the end...
-- Vejo vários animes no estilo de Bleach, HxH, Fairy Tail, Black Clover, Naruto, Boku no Hero...
+- Assisto vários animes no estilo de Bleach, HxH, Fairy Tail, Black Clover, Naruto, Boku no Hero...
 - Sou um <i class="fas fa-grin-hearts"></i> dorameiro de plantão, tenho alguns favoritos como:
 Make it Right, My Tee, Fish Upon the Sky;
 - <i class="fas fa-plane-departure"></i> Sempre que possível curto viajar, fazer trilhas e conhecer lugares novos.
