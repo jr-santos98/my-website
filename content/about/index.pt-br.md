@@ -26,7 +26,7 @@ Também trabalhei com o OpenStack, configurando e instalando um serviço de nuve
 
 - <img src="images\openstack-logo.png" width="16"></img> OpenStack;
 - <img src="images\jenkins-logo.png" width="16"></img> CI/CD;
-- <img src="images\opnfv-logo.png" width="16"></img> OPNFV;
+- <img src="images\opnfv_logo.png" width="16"></img> OPNFV;
 - **Programação:** Python, C, C++, JavaScript, Shell Script, java;
 - **Web Backend:** Servidores Linux, Configuração de rede, Apache, Hugo, Django;
 - **Web Front:** HTML e CSS básico.
@@ -34,12 +34,11 @@ Também trabalhei com o OpenStack, configurando e instalando um serviço de nuve
 ## Hobbies e Interesses
 
 - Sou um entusista <i class="fab fa-linux"></i> GNU/Linux;
-- Gosto de estar envolvido com a comunidade OpenSource, e também de fazer contribuições quando possível
-<i class="fas fa-grin-wink"></i>;
+- Gosto de me envolver e de contribuir com com a comunidade OpenSource <i class="fas fa-grin-wink"></i>;
 - No tempo livre amo <i class="fas fa-book"></i>  ler, <i class="fas fa-music"></i> ouvir música,
 <i class="fas fa-gamepad"></i> jogar...
 - Sigo alguns mangás como: Jujutsu Kaisen, Noragami, Seraph of the end...
 - Assisto vários animes no estilo de Bleach, HxH, Fairy Tail, Black Clover, Naruto, Boku no Hero...
-- Sou um <i class="fas fa-grin-hearts"></i> dorameiro de plantão, tenho alguns favoritos como:
+- Sou um <i class="fas fa-grin-hearts"></i> dorameiro de plantão, os que eu mais gostei foram:
 Make it Right, My Tee, Fish Upon the Sky;
 - <i class="fas fa-plane-departure"></i> Sempre que possível curto viajar, fazer trilhas e conhecer lugares novos.
