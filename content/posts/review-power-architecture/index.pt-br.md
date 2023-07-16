@@ -5,9 +5,6 @@ draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/about/"
 description: "Uma revisão sobre IBM Power Systems."
-resources:
-- name: "featured-image"
-  src: "blog-architecture-power.png"
 
 tags: ["Power Systems", "Power8", "Power9", "Power10"]
 categories: ["Power Systems"]
@@ -17,7 +14,9 @@ Este post faz uma revisão sobre os processadores que compoêm o IBM Power Syste
 
 <!--more-->
 
-# Instrodução
+![Logo - Power systems](blog-architecture-power.png)
+
+## Instrodução
 
 Em uma comparação entre os processadores da IBM (arquitetura Power) e os da Intel/AMD (arquitetura x86),
 pode-se afirmar que a melhor opções entre eles, dependerá do seu uso.

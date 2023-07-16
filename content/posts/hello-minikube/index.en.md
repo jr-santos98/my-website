@@ -5,9 +5,6 @@ draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/en/about/"
 description: "A tutorial to minikube."
-resources:
-- name: "featured-image"
-  src: "hello_minikube.png"
 
 tags: ["Tutorial", "Minikube", "Kubernetes"]
 categories: ["Tutorials"]
@@ -16,6 +13,8 @@ categories: ["Tutorials"]
 This tutorial shows you how to create a cluster for processors of the Power architecture (ppc64/ppc64le) using Minikube.
 
 <!--more-->
+
+![Logo of minikube](hello_minikube.png)
 
 The tutorial was performed on Ubuntu 20.04 LTS (ppc64le), the packages were downloaded using the package repository from [OpenPower Lab @ Unicamp](https://openpower.ic.unicamp.br/project/power-repository/).
 

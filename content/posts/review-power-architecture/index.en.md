@@ -5,9 +5,6 @@ draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/en/about/"
 description: "A review on IBM Power Systems."
-resources:
-- name: "featured-image"
-  src: "blog-architecture-power.png"
 
 tags: ["Power Systems", "Power8", "Power9", "Power10"]
 categories: ["Power Systems"]
@@ -16,8 +13,9 @@ categories: ["Power Systems"]
 This post reviews the processors that make up IBM Power Systems.
 
 <!--more-->
+![Logo - Power systems](blog-architecture-power.png)
 
-# Introduction
+## Introduction
 
 In a comparison between IBM processors (Power architecture) and Intel/AMD processors (x86 architecture),
 it can be said that the best options between them will depend on their use.
