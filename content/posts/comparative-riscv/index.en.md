@@ -47,7 +47,7 @@ followed by the comparison, and finally, the conclusion.
 For the selection of implementations to be presented, robust and advanced
 implementations were researched, ones capable of running an Operating System (OS)
 on an FPGA board. For this scenario, the following choices were made:
-Ariane (CVA6)[4], Boomv3[5], Rocket[1], and Shakti[2].
+Ariane (CVA6)[4], Boomv3[5], Rocket[1], and Shakti C-Class[2].
 
 ### Rocket Chip[*](https://github.com/chipsalliance/rocket-chip)
 
@@ -219,7 +219,7 @@ allowing specific adjustments for different scenarios.
 
 ## Comparison
 
-|              | Rocket   | BOOMv3   | Ariane   | Shakti   |
+|              | Rocket   | BOOMv3   | Ariane   | C-Class  |
 | ---          | :---:    | :---:    | :---:    | :---:    |
 | Bits         | 32/64    | 64       | 64       | 32/64    |
 | Stages       | 5        | 10/12    | 6        | 5        |
@@ -230,27 +230,72 @@ allowing specific adjustments for different scenarios.
 | Area         | 0,5 mm²  | 1,7 mm²  | 0,3 mm²  | 0,29 mm² |
 | Power        | 125 mW   | 300 mW   | 52 mW    | 90 mW    |
 
+Initially, we can observe the common characteristics between them.
+Both have support for 64-bit architecture.
+Furthermore, they implement versions close to the classic 5-stage pipeline
+and incorporate branch prediction in their implementations,
+utilizing resources like BTB, BHT, and RAS.
+Additionally, they are configurable, and their caches are accompanied by TLBs.
 
+Using the parameter of reported DMIPS/MHz quantity,
+the literature considers BOOMv3 to lead the performance criterion per MHz
+and surpass all others by more than a factor of 2.
+It's important to note that this doesn't necessarily mean it's the fastest processor,
+but rather that it executes more instructions per clock cycle.
+Following in sequence, the Rocket, C-Class, and CVA6 processors
+follow the mentioned order.
+The latter achieve similar values, with the exception of Ariane.
 
+According to the chipset reference, Ariane reaches a rate of 1.70 GHz,
+while the literature indicates its actual rate to be 1.21 GHz,
+putting it at a disadvantage compared to its competitors.
+Thus, Ariane has the lowest rate among the compared models.
+
+BOOMv3 also stands out as the most complex implementation,
+with a larger silicon area and higher power consumption.
+This is a result of its superscalar structure, parallelism, and execution capability.
+However, it's important to note that four Rocket cores could fit into
+a single BOOMv3 core, which applies to other implementations as well.
+Depending on the design, multiple low-power cores might be more advantageous
+than a highly efficient core.
+
+The chip technology can justify the area and consumption of these processors.
+Rocket and BOOMv3 are manufactured using 45 nm, while Ariane and C-Class use 22 nm.
+This choice of technology has a direct impact on energy consumption
+and the chip's footprint. Smaller values result in lower energy requirements
+and greater space efficiency within the chip.
+With more advanced technologies, chips can be reduced in size.
+
+Another interesting point is that Ariane and C-Class manage to be smaller
+and consume less than half the energy of Rocket,
+making them ideal for projects with minimal consumption requirements.
+Thus, they are compact and efficient implementations.
+Ariane also stands out in terms of efficiency and performance.
+
+Additionally, it's important to note that, with the exception of C-Class,
+all implementations present similar processing speeds.
 
 ## Conclusion
 
-Each implementation has its own advantages and disadvantages,
-catering to different audiences with diverse needs.
+All implementations have their advantages and disadvantages,
+catering to diverse audiences with specific needs.
 
-The Rocket implementation stands out for its pioneering nature, simplicity,
-and efficiency. As the first implementation, it serves as an ISA debugger,
-a template, and a reference for the emergence of new boards.
-It is also a favorite in publications and academia.
+The Rocket implementation stands out for its pioneering nature,
+simplicity, and efficiency.
+Being the first implementation, it serves as the ISA debugger,
+shaping and referencing the emergence of new boards.
+Additionally, it is favored in academic publications.
 
-BOOM distinguishes itself as the most robust and efficient implementation.
-It is oriented towards high-performance computing and its requirements.
+BOOMv3 stands out for being the most robust and efficient implementation,
+tailored for high-performance computing and its demands.
 
-Ariane, on the other hand, stands out for its size and power consumption considerations.
-It is designed to meet performance and energy efficiency requirements.
+Ariane, on the other hand, stands out for its compact size
+and energy efficiency.
+It was designed to meet more constrained development requirements.
 
-Lastly, the Shakti core is designed for medium-sized computing systems and possesses features
-suitable for that purpose. It is characterized by its simplicity and efficiency.
+Lastly, the C-Class core is designed for medium-scale computing systems
+and possesses suitable characteristics for that purpose.
+Its approach is simple and efficient.
 
 ## References
 

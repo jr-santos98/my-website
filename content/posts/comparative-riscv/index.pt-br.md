@@ -54,7 +54,7 @@ Para a escolha das implementações a serem apresentadas,
 foram pesquisadas implementações robustas e avançadas, que fossem
 capazes de executar um SO (Sistema Operacional) em uma placa FPGA.
 Para este cenário foram escolhidas:
-Ariane (CVA6)[4], Boomv3[5], Rocket[1] e Shakti[2].
+Ariane (CVA6)[4], Boomv3[5], Rocket[1] e Shakti Classe C[2].
 
 ### Rocket Chip[*](https://github.com/chipsalliance/rocket-chip)
 
@@ -219,7 +219,7 @@ O SHAKTI é um projeto de código aberto iniciado pelo
 Instituto Indiano de Tecnologia de Madras.
 Ele tem como objetivo criar processadores avançados que possam
 ser acessíveis e personalizáveis para diversas aplicações.
-A Classe C é um dos membros da família de processadores SHAKTI.
+O Classe C é um dos membros da família de processadores SHAKTI.
 Essa família de processadores visa oferecer opções variadas
 para diferentes necessidades.
 O processador Classe C é um exemplo notável dessa família.
@@ -231,6 +231,9 @@ Isso significa que ele incorpora os aprimoramentos
 e as características mais recentes desenvolvidas pela equipe do projeto.
 Ele representa o ápice da evolução dessa linha de processadores,
 garantindo um desempenho aprimorado e recursos mais sofisticados.
+
+> Por convenção, a partir desse ponto, será utilizado apenas o termo
+Shakti para se referir ao chipset Classe C da família de processadores Shakti.
 
 #### Pipeline
 
@@ -270,49 +273,73 @@ permitindo ajustes específicos de acordo com diferentes cenários.
 | Area         | 0,5 mm²  | 1,7 mm²  | 0,3 mm²  | 0,29 mm² |
 | Power        | 125 mW   | 300 mW   | 52 mW    | 90 mW    |
 
-Utilizando como parametro a quantidade de MIPS relatada,
-a literatura considera que BOOM lidera o critério de desempenho
+Inicialmente, podemos observar as características comuns entre eles.
+Ambos possuem suporte para arquitetura de 64 bits.
+Além disso, implementam versões próximas do pipeline clássico de 5 estágios
+e incorporam predição de branch em suas implementações,
+utilizando recursos como BTB, BHT e RAS. Além disso, são configuráveis,
+e suas caches são acompanhadas por TLBs.
+
+Utilizando como parâmetro a quantidade de DMIPS/MHz relatada,
+a literatura considera que o BOOMv3 lidera o critério de desempenho
 por MHz e ultrapassa todos os outros em mais de um fator de 2.
-Seguido por Rocket, SHAKTI e CVA6 seguem na ordem mencionada.
+É importante observar que isso não necessariamente significa que
+ele é o processador mais rápido,
+mas sim que ele realiza mais instruções por ciclo de clock.
+Na sequência, os processadores Rocket, SHAKTI e CVA6 seguem a ordem mencionada.
+Estes últimos conseguem alcançar valores semelhantes, com exceção do Ariane.
+De acordo com a referência do chipset, o Ariane alcança uma taxa de 1,70 GHz,
+enquanto a literatura indica que a sua taxa real é de 1,21 GHz,
+o que o coloca em desvantagem em relação aos seus concorrentes.
+Dessa forma, o Ariane possui a menor taxa entre os modelos comparados.
 
-BOOM também se destaca como sendo a implementação mais complexa,
-com maior área e consumo. Tudo isso deve-se ao fato, da sua
-estrutura superescalar, paralelismo e capacidade de execução.
-Por outro lado, caberiam 4 núcleos do Rocket em um do BOOM,
-o mesmo pode ser dito das outras implementações, dependendo do
-projeto pode ser mais interessante vários núcleos de baixo consumo
-que um muito eficiente.
+O BOOMv3 também se destaca como a implementação mais complexa,
+com uma área de silício maior e maior consumo de energia.
+Isso é resultado de sua estrutura superescalar,
+paralelismo e capacidade de execução.
+No entanto, é importante notar que quatro núcleos do Rocket poderiam
+caber em um único núcleo do BOOMv3, o que se aplica também a outras implementações.
+Dependendo do projeto, vários núcleos de baixo consumo podem ser
+mais vantajosos do que um núcleo altamente eficiente.
 
-Shakti e Arine são implementações pequenas, com baixo consumo e
-eficientes. Ariane consegue ser superior em alguns quesitos.
-Já os outros modelos não conseguem ser pequenos ou economicos.
-O BOOM de longe é que o apresenta o maior consumo e área
-de silicio.
+A tecnologia do chip pode ser usada para justificar a área
+e o consumo desses processadores.
+O Rocket e o BOOMv3 são fabricados em 45 nm, enquanto o Ariane
+e o Shakti utilizam 22 nm. Essa escolha de tecnologia tem um impacto
+direto no consumo de energia e na área ocupada pelo chip.
+Quanto menor o valor, menor a energia necessária e maior a eficiência
+de espaço dentro do chip.
+Com tecnologias mais avançadas, os chips podem ser reduzidos em tamanho.
 
-Outro ponto relevante, é que com exceção do Shakti,
-todas as implementações apresentam velocidade de processamento
-semelhantes.
+Outro ponto interessante é que o Ariane e o Shakti conseguem ser
+menores e consomem menos da metade da energia do Rocket,
+o que os torna ideais para projetos com requisitos mínimos de consumo.
+Dessa forma, eles são implementações compactas e eficientes.
+O Ariane também se destaca em termos de eficiência e desempenho.
+
+Além disso, é importante observar que, com exceção do Shakti,
+todas as implementações apresentam velocidades de processamento próximas.
 
 ## Conclusão
 
 Todas as implementações têm suas vantagens e desvantagens,
-elas atendem a públicos diferentes com necessidades diferentes.
+atendendo a públicos diversos com necessidades específicas.
 
-A implementação Rocket se destaca pelo pionerismo, simplicidade e
-eficiência. Foi a primeira implementação, serve como debugguer da ISA,
-molde e referência no surgimento de novas placas.
-Assim como, queridinha das publicações e da academia.
+A implementação Rocket se destaca pelo pioneirismo, simplicidade e
+eficiência.
+Sendo a primeira implementação, ela serve como depurador da ISA, 
+moldando e referenciando o surgimento de novas placas.
+Além disso, é a queridinha das publicações acadêmicas.
 
-BOOM, se destaca por ser a implementação mais robosta e eficiente.
-Voltada para a computação de alto desempenho e suas necessidades.
+BOOMv3 se destaca por ser a implementação mais robusta e eficiente,
+voltada para computação de alto desempenho e suas demandas.
 
-Ariane por sua vez, se destaca pelo tamanho e consumo.
-Projetada para atender a requisitos de
-desempenho e eficiência energética.
+Ariane, por sua vez, se destaca pelo tamanho compacto e eficiência energética.
+Foi projetada para atender a requisitos de desenvolvimento mais limitados.
 
 Por fim, o núcleo Shakti é projetado para sistemas de computação
 de médio porte e possui características adequadas para essa finalidade.
-Ela é simples e eficiente.
+Sua abordagem é simples e eficiente.
 
 ## Referências
 
