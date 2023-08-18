@@ -29,7 +29,9 @@ de forma a permitir que qualquer pessoa possa usar, modificar
 e implementar a arquitetura sem restrições ou custos
 adicionais. A ISA foi projetada para suportar espaços de endereçamento
 de 32 bits, 64 bits e 128 bits, visando aumentar a
-sua adoção. Essa flexibilidade permite que a arquitetura RISCV
+sua adoção.
+
+Essa flexibilidade permite que a arquitetura RISCV
 seja utilizada em uma ampla variedade de aplicações, desde
 dispositivos de baixo consumo de energia até sistemas de alto
 desempenho. Ao suportar diferentes tamanhos de palavra,
@@ -106,6 +108,7 @@ o que significa que pode executar várias instruções em paralelo,
 independentemente da ordem em que foram escritas no programa.
 Isso geralmente resulta em um alto desempenho,
 pois permite que o processador aproveite melhor os recursos disponíveis.
+
 O pipeline do BOOMv3 tem 10 estágios, o que significa que as instruções
 percorrem uma série de etapas separadas enquanto são processadas.
 Isso ajuda a dividir o trabalho em partes menores e
@@ -265,7 +268,7 @@ permitindo ajustes específicos de acordo com diferentes cenários.
 | Tech         | 45nm     | 45nm     | 22 nm    | 22 nm    |
 | Speed        | 1,6 GHz  | 1,5 GHz  | 1,7 GHz  | 0,8 GHz  |
 | Area         | 0,5 mm²  | 1,7 mm²  | 0,3 mm²  | 0,29 mm² |
-| Power        | 125 mW   | 300 mW   | 52 mW    | 90 mW   |
+| Power        | 125 mW   | 300 mW   | 52 mW    | 90 mW    |
 
 Utilizando como parametro a quantidade de MIPS relatada,
 a literatura considera que BOOM lidera o critério de desempenho
@@ -325,9 +328,9 @@ Ela é simples e eficiente.
 
 ## Glossário
 
-- **Buffer de destino de ramificação (BTB)**: armazena o endereço de destino de cada instrução de ramificação que é executada.
-- **Buffer de pesquisa de tradução (TLB)**: é uma pequena memória associativa que armazena traduções de endereços virtuais para endereços físicos.
-- **Cache**: é uma área de armazenamento rápido que é usada para armazenar cópias de dados que são acessados com frequência.
-- **Caminhador da tabela de páginas (PTW)**: é um componente da unidade de gerenciamento de memória (MMU) de um processador. O PTW é responsável por traduzir endereços virtuais em endereços físicos.
-- **Pilha de endereços de retorno (RAS)**: é usada para manter o controle do fluxo de execução do programa e garantir que as funções sejam chamadas na ordem correta.
-- **Tabela de histórico de ramificação (BHT)**: é uma tabela que armazena o endereço de destino de cada instrução de ramificação que foi executada, bem como o endereço da instrução anterior que a causou.
+- **Buffer de destino de ramificação (BTB)**: Prevê o possível endereço de destino para instruções de ramificação com base em padrões anteriores.
+- **Buffer de pesquisa de tradução (TLB)**: É uma pequena memória associativa que armazena traduções de endereços virtuais para endereços físicos.
+- **Cache**: É uma área de armazenamento rápido que é usada para armazenar cópias de dados que são acessados com frequência.
+- **Caminhador da tabela de páginas (PTW)**: É um componente da unidade de gerenciamento de memória (MMU) de um processador. O PTW é responsável por traduzir endereços virtuais em endereços físicos.
+- **Pilha de endereços de retorno (RAS)**: É usado para rastrear o fluxo de execução do programa, e assegurar que o fluxo de execução retorne adequadamente para a instrução que fez a chamada.
+- **Tabela de histórico de ramificação (BHT)**: Armazena padrões de histórico de decisões de ramificação e ajuda a prever a probabilidade de uma instrução de ramificação ser tomada ou não tomada.
