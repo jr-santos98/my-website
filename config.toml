@@ -24,7 +24,7 @@ enableEmoji = true
     # whether to include Chinese/Japanese/Korean
     hasCJKLanguage = false
     # default amount of posts in each pages
-    paginate = 12
+    pagination.pagerSize = 12
     # [UA-XXXXXXXX-X] google analytics code
     googleAnalytics = ""
     # copyright description used only for seo schema
@@ -143,13 +143,13 @@ enableEmoji = true
         [languages.pt-br.params.home.posts]
           enable = true
           # special amount of posts in each home posts page
-          paginate = 6
+          pagination.pagerSize = 6
       # Social config in home page
       [languages.pt-br.params.social]
         GitHub = "jr-santos98"
         Linkedin = "c-santos-jr"
         Twitter = ""
-        Instagram = "j.r_s.a.n.t.o.s"
+        Instagram = "jr_santos.98"
         Facebook = "j.r.s.a.n.t.o.s.2.8"
         Telegram = ""
         Medium = ""
@@ -220,7 +220,7 @@ enableEmoji = true
     # whether to include Chinese/Japanese/Korean
     hasCJKLanguage = false
     # default amount of posts in each pages
-    paginate = 12
+    pagination.pagerSize = 12
     # [UA-XXXXXXXX-X] google analytics code
     googleAnalytics = ""
     # copyright description used only for seo schema
@@ -343,13 +343,13 @@ enableEmoji = true
         [languages.en.params.home.posts]
           enable = true
           # special amount of posts in each home posts page
-          paginate = 6
+          pagination.pagerSize = 6
       # Social config in home page
       [languages.en.params.social]
         GitHub = "jr-santos98"
         Linkedin = "c-santos-jr"
         Twitter = ""
-        Instagram = "j.r_s.a.n.t.o.s"
+        Instagram = "jr_santos.98"
         Facebook = "j.r.s.a.n.t.o.s.2.8"
         Telegram = ""
         Medium = ""
@@ -429,6 +429,13 @@ enableEmoji = true
   # website images for Open Graph and Twitter Cards
   # 网站图片, 用于 Open Graph 和 Twitter Cards
   images = ["/logo.png"]
+
+  # Author config
+  # 作者配置
+  [params.author]
+    name = "Junior Santos"
+    email = "claudio.dossantosjunior@yahoo.com.br"
+    link = "https://jr-santos98.github.io/"
 
   # Header config
   # 页面头部导航栏配置
@@ -608,33 +615,32 @@ enableEmoji = true
     # 文章页面的分享信息设置
     [params.page.share]
       enable = true
-      Twitter = true
+      X = true
+      Threads = true
       Facebook = true
       Linkedin = true
       Whatsapp = true
       Pinterest = false
       Tumblr = false
-      HackerNews = false
+      HackerNews = true
       Reddit = true
-      VK = false
+      VK = true
       Buffer = false
       Xing = false
-      Line = false
+      Line = true
       Instapaper = false
       Pocket = false
-      Digg = false
-      Stumbleupon = false
       Flipboard = false
-      Weibo = false
-      Renren = false
-      Myspace = false
+      Weibo = true
       Blogger = false
       Baidu = false
       Odnoklassniki = false
       Evernote = false
       Skype = false
       Trello = false
+      Diaspora = false
       Mix = false
+      Telegram = true
     # Comment config
     # 评论系统设置
     [params.page.comment]
@@ -657,9 +663,9 @@ enableEmoji = true
       # Valine comment config (https://github.com/xCss/Valine)
       # Valine 评论系统设置 (https://github.com/xCss/Valine)
       [params.page.comment.valine]
-        enable = true
-        appId = "c1PRSknpuu6SngDIkae9hdyx-MdYXbMMI"
-        appKey = "gnb7H7gS8b0UjAJuqJfJMRoW"
+        enable = false
+        appId = ""
+        appKey = ""
         placeholder = ""
         avatar = "mp"
         meta= ""
@@ -714,6 +720,35 @@ enableEmoji = true
         label = ""
         lightTheme = "github-light"
         darkTheme = "github-dark"
+      # giscus comment config (https://giscus.app/)
+      # giscus comment 评论系统设置 (https://giscus.app/zh-CN)
+      [params.page.comment.giscus]
+        # You can refer to the official documentation of giscus to use the following configuration.
+        # 你可以参考官方文档来使用下列配置
+        enable = true
+        repo = "jr-santos98/jr-santos98.github.io"
+        repoId = "MDEwOlJlcG9zaXRvcnkyNzkxNDE2MTk="
+        category = "Announcements"
+        categoryId = "DIC_kwDOEKNc884Cqqse"
+        # automatically adapt the current theme i18n configuration when empty
+        # 为空时自动适配当前主题 i18n 配置
+        lang = ""
+        mapping = "pathname"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "top"
+        lazyLoading = false
+        lightTheme = "light"
+        darkTheme = "dark"
+      # Waline comment config (https://waline.js.org/)
+      # Waline 评论系统设置 (https://waline.js.org/)
+      [params.page.comment.waline]
+        enable = false
+        serverURL = "https://love-it-waline.vercel.app"
+        # automatically adapt the current theme i18n configuration when empty
+        # 为空时自动适配当前主题 i18n 配置
+        lang = ""
+        emoji = ["https://unpkg.com/@waline/emojis@1.0.1/tw-emoji"]
     # Third-party library config
     # 第三方库配置
     [params.page.library]
@@ -879,7 +914,7 @@ enableEmoji = true
 # Permalinks 配置 (https://gohugo.io/content-management/urls/#permalinks)
 [Permalinks]
   # posts = ":year/:month/:filename"
-  posts = ":filename"
+  posts = ":contentbasename"
 
 # Privacy config (https://gohugo.io/about/hugo-and-gdpr/)
 # 隐私信息配置 (https://gohugo.io/about/hugo-and-gdpr/)
@@ -888,7 +923,7 @@ enableEmoji = true
   # Google Analytics 相关隐私 (被 params.analytics.google 替代)
   [privacy.googleAnalytics]
     # ...
-  [privacy.twitter]
+  [privacy.x]
     enableDNT = true
   [privacy.youtube]
     privacyEnhanced = true
@@ -913,4 +948,3 @@ enableEmoji = true
   page = ["HTML", "MarkDown"]
   section = ["HTML", "RSS"]
   taxonomy = ["HTML", "RSS"]
-  taxonomyTerm = ["HTML"]
