@@ -4,7 +4,7 @@
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
 # Add chances for /Public
-hugo -D
+hugo
 
 # Go To Public folder
 cd public
