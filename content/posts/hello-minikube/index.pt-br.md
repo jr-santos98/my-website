@@ -5,6 +5,12 @@ draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/about/"
 description: "Um tutorial para minikube."
+images: []
+lightgallery: true
+
+resources:
+- name: "featured-image"
+  src: "featured-image.png"
 
 tags: ["Tutorial", "Minikube", "Kubernetes"]
 categories: ["Tutoriais"]
@@ -14,7 +20,7 @@ Este tutorial mostra como criar um cluster para processadores da arquitetura Pow
 
 <!--more-->
 
-![Logo of minikube](hello_minikube.png)
+<!-- ![Logo of minikube](hello_minikube.png) -->
 
 O tutorial foi realizado no Ubuntu Server 20.04 LTS (ppc64le), o pacote utilizado foi baixado
 utilizando o repositório de arquivos do [OpenPower Lab @ Unicamp](https://openpower.ic.unicamp.br/project/power-repository/).

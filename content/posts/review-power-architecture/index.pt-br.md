@@ -5,6 +5,12 @@ draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/about/"
 description: "Uma revisão sobre IBM Power Systems."
+images: []
+lightgallery: true
+
+resources:
+- name: "featured-image"
+  src: "featured-image.png"
 
 tags: ["Power Systems", "Power8", "Power9", "Power10"]
 categories: ["Power Systems"]
@@ -14,7 +20,7 @@ Este post faz uma revisão sobre os processadores que compoêm o IBM Power Syste
 
 <!--more-->
 
-![Logo - Power systems](blog-architecture-power.png)
+<!-- ![Logo - Power systems](blog-architecture-power.png) -->
 
 ## Instrodução
 

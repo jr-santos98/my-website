@@ -5,6 +5,12 @@ draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/about/"
 description: "Uma comparação entre as implementações para a ISA RISC-V."
+images: []
+lightgallery: true
+
+resources:
+- name: "featured-image"
+  src: "featured-image.png"
 
 tags: ["RISCV", "Implementação", "Comparação"]
 categories: ["RISCV"]
@@ -15,7 +21,7 @@ de RISCV, são eles os chips: Rocket, BOOM, Ariane (CVA6) e SHAKTI Classe C.
 
 <!--more-->
 
-![Logo of riscv](riscv-logo.png)
+<!-- ![Logo of riscv](riscv-logo.png) -->
 
 ## Introdução
 

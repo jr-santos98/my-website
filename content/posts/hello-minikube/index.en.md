@@ -5,6 +5,12 @@ draft: false
 author: "Junior Santos"
 authorLink: "https://jr-santos98.github.io/en/about/"
 description: "A tutorial to minikube."
+images: []
+lightgallery: true
+
+resources:
+- name: "featured-image"
+  src: "featured-image.png"
 
 tags: ["Tutorial", "Minikube", "Kubernetes"]
 categories: ["Tutorials"]
@@ -14,7 +20,7 @@ This tutorial shows you how to create a cluster for processors of the Power arch
 
 <!--more-->
 
-![Logo of minikube](hello_minikube.png)
+<!-- ![Logo of minikube](hello_minikube.png) -->
 
 The tutorial was performed on Ubuntu 20.04 LTS (ppc64le), the packages were downloaded using the package repository from [OpenPower Lab @ Unicamp](https://openpower.ic.unicamp.br/project/power-repository/).
 
