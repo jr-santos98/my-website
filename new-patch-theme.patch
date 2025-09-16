@@ -21,6 +21,36 @@ index 6b68e111..ce152427 100644
      .links {
        padding: .5rem;
        font-size: 1.5rem;
+diff --git a/exampleSite/hugo.toml b/exampleSite/hugo.toml
+index 67211a8c..f12f1a85 100644
+--- a/exampleSite/hugo.toml
++++ b/exampleSite/hugo.toml
+@@ -272,6 +272,10 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
+       # whether to use typeit animation for subtitle
+       # 是否为副标题显示打字机动画
+       typeit = true
++      # you can add extra information after the subtitle, such as citations or a summary
++      extra = ""
++      # display extra text in italic (default: true)
++      extraItalic = true
+       # whether to show social links
+       # 是否显示社交账号
+       social = true
+diff --git a/hugo.toml b/hugo.toml
+index 45313fce..e3d0b9f3 100644
+--- a/hugo.toml
++++ b/hugo.toml
+@@ -191,6 +191,10 @@
+       # whether to use typeit animation for subtitle
+       # 是否为副标题显示打字机动画
+       typeit = true
++      # you can add extra information after the subtitle, such as citations or a summary
++      extra = ""
++      # display extra text in italic (default: true)
++      extraItalic = true
+       # whether to show social links
+       # 是否显示社交账号
+       social = true
 diff --git a/layouts/partials/home/profile.html b/layouts/partials/home/profile.html
 index 447b416f..f23a85b4 100644
 --- a/layouts/partials/home/profile.html

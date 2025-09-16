@@ -135,7 +135,7 @@ enableEmoji = true
           subtitle = "Analista de Software, Pesquisador & Desenvolvedor de Sistemas Embarcados ⚙️"
           # whether to use typeit animation for subtitle
           typeit = true
-          # you can add extra information after the subtitle
+          # you can add extra information after the subtitle, such as citations or a summary
           extra = "'A ciência é o que nós compreendemos suficientemente bem para explicar a um computador. A arte é tudo mais.' - Donald Knuth"
           # display extra text in italic (default: true)
           extraItalic = true
@@ -339,7 +339,7 @@ enableEmoji = true
           subtitle = "Software Analyst, Researcher & Embedded Systems Developer ⚙️"
           # whether to use typeit animation for subtitle
           typeit = true
-          # you can add extra information after the subtitle
+          # you can add extra information after the subtitle, such as citations or a summary
           extra = "'Science is what we understand well enough to explain to a computer. Art is everything else we do.' - Donald Knuth"
           # display extra text in italic (default: true)
           extraItalic = true
